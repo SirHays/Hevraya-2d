@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 773675038}
   - component: {fileID: 773675041}
   - component: {fileID: 773675042}
+  - component: {fileID: 773675043}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -238,11 +239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e219ce25bbe4124ba115d964d174799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkingUPanim: {fileID: 0}
   Up: w
   Down: s
   Left: a
   Right: d
-  Speed: 20
+  Speed: 5
+  target: {fileID: 773675040}
 --- !u!212 &773675039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -348,3 +351,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &773675043
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773675037}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: b677250566a35d14d8ba341069c00c68, type: 2}
+  - {fileID: 7400000, guid: 55f381073e4c48f419ef055c34ae90e2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
