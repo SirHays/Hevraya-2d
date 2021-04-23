@@ -14,7 +14,7 @@ public class movement : MonoBehaviour
     public Transform target; //Assign to the object you want to rotate
     private Vector3 object_pos;
     private float angle;
-
+    
 
     private Vector2 lookInput, screenCenter;
     private Animation anim;
@@ -42,7 +42,7 @@ public class movement : MonoBehaviour
         
         an.SetBool("iswalking", false);
         mouse_pos = Input.mousePosition;
-        mouse_pos.z = 5.23f; //The distance between the camera and object
+        //mouse_pos.z = 5.23f; //The distance between the camera and object
         object_pos = Camera.main.WorldToScreenPoint(target.position);
         mouse_pos.x = mouse_pos.x - object_pos.x;
         mouse_pos.y = mouse_pos.y - object_pos.y;
